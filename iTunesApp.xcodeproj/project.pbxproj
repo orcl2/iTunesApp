@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261C7E3227E7DEE200EDB28D /* AbouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C7E3127E7DEE200EDB28D /* AbouViewController.swift */; };
 		264F1A7F27E60261001B2FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F1A7E27E60261001B2FAB /* AppDelegate.swift */; };
 		264F1A8127E60261001B2FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F1A8027E60261001B2FAB /* SceneDelegate.swift */; };
 		264F1A8327E60261001B2FAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F1A8227E60261001B2FAB /* HomeViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261C7E3127E7DEE200EDB28D /* AbouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbouViewController.swift; sourceTree = "<group>"; };
 		264F1A7B27E60261001B2FAB /* iTunesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		264F1A7E27E60261001B2FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		264F1A8027E60261001B2FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261C7E3027E7DED000EDB28D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				261C7E3127E7DEE200EDB28D /* AbouViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		264F1A7227E60260001B2FAB = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		264F1A9E27E60BD4001B2FAB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				261C7E3027E7DED000EDB28D /* About */,
 				264F1A8427E60261001B2FAB /* Main.storyboard */,
 				264F1AA227E60E5F001B2FAB /* Cell */,
 				264F1AA027E60C5D001B2FAB /* Favorite */,
@@ -239,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261C7E3227E7DEE200EDB28D /* AbouViewController.swift in Sources */,
 				264F1A8327E60261001B2FAB /* HomeViewController.swift in Sources */,
 				264F1A9A27E60691001B2FAB /* ApiService.swift in Sources */,
 				264F1A7F27E60261001B2FAB /* AppDelegate.swift in Sources */,
