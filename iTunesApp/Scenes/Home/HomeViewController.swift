@@ -54,6 +54,7 @@ class HomeViewController: UIViewController {
                 }
             }
         }
+        self.view.endEditing(true)
     }
 }
 

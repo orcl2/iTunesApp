@@ -118,8 +118,7 @@ class ManagedObjectContext: ManagedProtocol, ManagedSavedProtocol, ManagedDelete
                     
                     let image = UIImage(data: artwork) ?? UIImage(systemName: "music.note")
                         
-                    let track = Track(trackID: trackID, artistName: artistName, collectionName: collectionName, trackName: trackName, trackViewURL: "", artworkUrl100: "", trackPrice: trackPrice, releaseDate: releaseDate, trackTimeMillis: 0, country: "", currency: currency, primaryGenreName: "", contentAdvisoryRating: "", image: image, isFavorite: true)
-                        print(track.trackID)
+                    let track = Track(trackID: trackID, artistName: artistName, trackName: trackName, collectionName: collectionName, trackViewURL: "", artworkUrl100: "", trackPrice: trackPrice, releaseDate: releaseDate, trackTimeMillis: 0, country: "", currency: currency, primaryGenreName: "", image: image, isFavorite: true)
                         
                     listTracks.append(track)
                 }

@@ -34,10 +34,11 @@ class ApiService: ServiceProtocol {
         let action = "search"
         let param1 = "media=music"
         let param2 = "term=\(term)"
-        let queryUrl = "\(baseUrl)/\(action)?\(param1)&\(param2)"
-        
+        guard let queryUrl = "\(baseUrl)/\(action)?\(param1)&\(param2)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return completion(.failure(.urlInvalid))}
+//        print(queryUrl)
         guard let url = URL(string: queryUrl) else { return completion(.failure(.urlInvalid))
         }
+        print(url)
         
         let dataTask = session.dataTask(with: url) { data, _ , _ in
             

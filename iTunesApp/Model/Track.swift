@@ -22,13 +22,14 @@ struct TrackList: Codable {
 // MARK: - Track
 struct Track: Codable {
     let trackID: Int
-    let artistName, collectionName, trackName: String
-    let trackViewURL: String
+    let artistName, trackName: String?
+    let collectionName: String?
+    let trackViewURL: String?
     let artworkUrl100: String
-    let trackPrice: Double
-    let releaseDate: String
-    let trackTimeMillis: Int
-    let country, currency, primaryGenreName, contentAdvisoryRating: String
+    let trackPrice: Double?
+    let releaseDate: String?
+    let trackTimeMillis: Int?
+    let country, currency, primaryGenreName: String?
     var image: UIImage?
     var isFavorite: Bool?
     
@@ -36,6 +37,6 @@ struct Track: Codable {
         case trackID = "trackId"
         case artistName, collectionName, trackName
         case trackViewURL = "trackViewUrl"
-        case artworkUrl100, trackPrice, releaseDate, trackTimeMillis, country, currency, primaryGenreName, contentAdvisoryRating
+        case artworkUrl100, trackPrice, releaseDate, trackTimeMillis, country, currency, primaryGenreName
     }
 }

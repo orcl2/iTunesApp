@@ -22,7 +22,6 @@ class TrackTableViewCell: UITableViewCell {
         didSet {
             DispatchQueue.main.async {
                 self.updateUI(self.track)
-                self.track.image = self.trackImageView.image
             }
         }
     }
@@ -64,7 +63,10 @@ class TrackTableViewCell: UITableViewCell {
     }
     
     private func saveFavoriteTrack(track: Track) {
-        ManagedObjectContext.shared.save(track: track) { result in
+        var newTrack = track
+        print(self.trackImageView?.image)
+        newTrack.image = self.trackImageView?.image
+        ManagedObjectContext.shared.save(track: newTrack) { result in
             print(result)
         }
     }
