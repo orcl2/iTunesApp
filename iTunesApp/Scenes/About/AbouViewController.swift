@@ -32,7 +32,7 @@ class AboutViewController: UIViewController {
         👨🏻‍💻 Alison Gustavo
         👨🏻‍💻 Matheus Lenke
         👨🏻‍💻 João Victor
-        👨🏻‍💻 Luiz Gustavo
+        👨🏻‍💻 Luis Kokumai
         👨🏻‍💻 William Daniel
         """
     }
